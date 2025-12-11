@@ -1,4 +1,5 @@
 import { ChevronDown } from "lucide-react";
+import heroImage from "@/assets/hero-team.jpg";
 
 const HeroSection = () => {
   const scrollToAbout = () => {
@@ -11,7 +12,7 @@ const HeroSection = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=80')`,
+          backgroundImage: `url('${heroImage}')`,
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
