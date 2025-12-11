@@ -1,33 +1,55 @@
-import { Utensils, Flame, ChefHat, Award } from "lucide-react";
+import { Utensils, Flame, ChefHat, Award,Sandwich,Cookie,Salad, EggFried, Ham } from "lucide-react";
+
 
 const journeyMilestones = [
   {
-    icon: Utensils,
-    title: "Getting Started",
-    period: "Week 1-2",
-    description: "Introduction to kitchen fundamentals, knife skills, and mise en place. Learning to organize the workspace efficiently.",
-    highlights: ["Kitchen safety", "Basic knife techniques", "Ingredient preparation"],
+    icon: Sandwich,
+    title: "Deli Sandwich",
+    period: "Week 1",
+    description: "Introduction to kitchen fundamentals, and mise en place. Learning to organize the workspace efficiently. Prepared deli sandwiches using KSG standardised recipes",
+    highlights: ["Ingredient preparation","Open-closed-wrapped sandwiches","garnishing","selection of breads"],
+  },
+  {
+    icon: Cookie,
+    title: "Baked Goods",
+    period: "Week 2",
+    description: "Learned to bake a variety of goods including soda bread, hazelnut brownies, scones, and cookies, mastering techniques to control heat and achieve perfect texture in each product.",
+    highlights: ["pastry techniques","baking techniques","dough handling"],
+  },
+  {
+    icon: Salad,
+    title: "Deli Salads",
+    period: "Week 3",
+    description: "Deep dive into heat control, pan-frying, and grilling techniques. Understanding how heat transforms ingredients.",
+    highlights: ["Charcutier platter", "Gourmet Salads", "Salad Dressing"],
   },
   {
     icon: Flame,
-    title: "Mastering Heat",
-    period: "Week 3-4",
-    description: "Deep dive into heat control, pan-frying, and grilling techniques. Understanding how heat transforms ingredients.",
-    highlights: ["Pan-frying fish", "Temperature control", "Grilling proteins"],
+    title: "Stewing",
+    period: "Week 4",
+    description: "Practiced stewing by browning ingredients, adding liquid, and simmering them slowly to develop flavor and tenderness.",
+    highlights: ["Stewing", "beef", "lamb","simmering","sweating"],
+  },
+  {
+    icon: EggFried,
+    title: "Stewing continued",
+    period: "Week 5",
+    description: "We reinforced stewing principles through lamb tagine, risotto variations, couscous, and egg fried rice. Main techniques included controlled absorption, low-and-slow cooking, and aromatic profiling.",
+    highlights: ["Consistency control", "Aromatic profiling", "Low-and-slow cooking"],
+  },
+  {
+    icon: Ham,
+    title: "Roasting and Poaching",
+    period: "Week 6",
+    description: "We prepared roast chicken, poached/steamed chicken, and poached salmon while learning dry-heat roasting, gentle poaching, and moisture retention for tender proteins.",
+    highlights: ["Dry-heat roasting", "Slow braise", "Caramelisation"],
   },
   {
     icon: ChefHat,
-    title: "Advanced Techniques",
-    period: "Week 5-6",
-    description: "Exploring roasting, sauce making, and more complex preparations. Building flavor through various cooking methods.",
-    highlights: ["Roasting mastery", "Sauce reductions", "Cream-based sauces"],
-  },
-  {
-    icon: Award,
-    title: "The Final Touches",
-    period: "Week 7-8",
-    description: "Perfecting presentation, plating aesthetics, and completing the full course with signature dishes.",
-    highlights: ["Plating techniques", "Final assessments", "Portfolio creation"],
+    title: "Frying & Grilling",
+    period: "Week 7",
+    description: "We cooked pollo asado, chicken schnitzel, seabass, stir-fried noodles, and halloumi using pan, wok methods. Focus was on searing, shallow frying, wok control, and grill marking.",
+    highlights: ["Grill marking", "Searing", "Heat-zone management"],
   },
 ];
 

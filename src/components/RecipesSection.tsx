@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Clock, Users, ChefHat, X } from "lucide-react";
-
+import seabass from "@/assets/seabass.jpg";
+import schnitzel from "@/assets/schnitzel.jpg"
 interface Recipe {
   id: number;
   name: string;
@@ -8,7 +9,7 @@ interface Recipe {
   image: string;
   prepTime: string;
   servings: string;
-  difficulty: string;
+  //difficulty: string;
   ingredients: string[];
   method: string[];
   category: string;
@@ -19,10 +20,10 @@ const recipes: Recipe[] = [
     id: 1,
     name: "Panfried Seabass",
     description: "Crispy-skinned seabass fillet served with a luxurious white wine cream sauce, showcasing perfect pan-frying technique.",
-    image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=800&q=80",
+    image: seabass,
     prepTime: "30 mins",
     servings: "2",
-    difficulty: "Intermediate",
+    //difficulty: "Intermediate",
     category: "Main Course",
     ingredients: [
       "2 seabass fillets, scaled and pin-boned",
@@ -48,28 +49,26 @@ const recipes: Recipe[] = [
     id: 2,
     name: "Chicken Schnitzel",
     description: "Golden, crispy breaded chicken cutlet served alongside buttery egg noodles with fresh herbs.",
-    image: "https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=800&q=80",
+    image: schnitzel,
     prepTime: "40 mins",
     servings: "2",
-    difficulty: "Beginner",
+    //difficulty: "Beginner",
     category: "Main Course",
     ingredients: [
-      "2 chicken breasts, butterflied and pounded thin",
+      "2 chicken breasts",
       "Plain flour for dredging",
       "2 eggs, beaten",
       "200g panko breadcrumbs",
-      "250g egg noodles",
       "Butter and parsley",
       "Lemon wedges",
       "Salt and pepper"
     ],
     method: [
-      "Pound chicken between plastic wrap until 1cm thick.",
+      "Butterfly the chicken and pound between plastic wrap until 1cm thick.",
       "Set up breading station: flour, eggs, breadcrumbs.",
       "Season chicken, dredge in flour, dip in egg, coat in crumbs.",
       "Shallow fry in oil/butter mixture until golden, 3-4 mins per side.",
-      "Cook noodles according to package, drain.",
-      "Toss noodles with butter and chopped parsley.",
+      "Finish in oven for 5 mins",
       "Serve schnitzel with noodles and lemon wedges."
     ]
   },
@@ -80,7 +79,7 @@ const recipes: Recipe[] = [
     image: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&q=80",
     prepTime: "20 mins",
     servings: "2",
-    difficulty: "Beginner",
+    //difficulty: "Beginner",
     category: "Main Course",
     ingredients: [
       "300g fresh egg noodles",
@@ -109,7 +108,7 @@ const recipes: Recipe[] = [
     image: "https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=800&q=80",
     prepTime: "35 mins",
     servings: "4",
-    difficulty: "Beginner",
+    //difficulty: "Beginner",
     category: "Side Dish",
     ingredients: [
       "500g waxy potatoes",
@@ -137,7 +136,7 @@ const recipes: Recipe[] = [
     image: "https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=800&q=80",
     prepTime: "45 mins",
     servings: "4",
-    difficulty: "Intermediate",
+    //difficulty: "Intermediate",
     category: "Main Course",
     ingredients: [
       "4 chicken thighs, bone-in",
@@ -166,7 +165,7 @@ const recipes: Recipe[] = [
     image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=800&q=80",
     prepTime: "50 mins",
     servings: "12",
-    difficulty: "Beginner",
+    //difficulty: "Beginner",
     category: "Dessert",
     ingredients: [
       "200g dark chocolate",
@@ -246,10 +245,6 @@ const RecipesSection = () => {
                     <Users className="w-3.5 h-3.5" />
                     {recipe.servings}
                   </span>
-                  <span className="flex items-center gap-1">
-                    <ChefHat className="w-3.5 h-3.5" />
-                    {recipe.difficulty}
-                  </span>
                 </div>
               </div>
             </div>
@@ -302,10 +297,6 @@ const RecipesSection = () => {
                 <span className="flex items-center gap-2 text-sm">
                   <Users className="w-4 h-4 text-primary" />
                   Serves {selectedRecipe.servings}
-                </span>
-                <span className="flex items-center gap-2 text-sm">
-                  <ChefHat className="w-4 h-4 text-primary" />
-                  {selectedRecipe.difficulty}
                 </span>
               </div>
 

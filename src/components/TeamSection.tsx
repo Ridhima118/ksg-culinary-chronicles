@@ -1,5 +1,5 @@
 import { Users, Heart, Target, Lightbulb } from "lucide-react";
-
+import heroImage from "@/assets/hero-team.jpg";
 const teamValues = [
   {
     icon: Users,
@@ -41,25 +41,34 @@ const TeamSection = () => {
         {/* Team Photo Placeholder */}
         <div className="relative mb-16">
           <div className="aspect-[21/9] bg-card rounded-lg overflow-hidden border border-border/50 shadow-elegant">
+            <div
+            className="w-full h-full bg-cover bg-center" style={{backgroundImage: `url('${heroImage}')`,}}/>
+          </div>
+        </div>
+        {/*
+        <div className="relative mb-16">
+          <div className="aspect-[21/9] bg-card rounded-lg overflow-hidden border border-border/50 shadow-elegant">
             <div 
               className="w-full h-full bg-cover bg-center"
               style={{
-                backgroundImage: `url('https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?w=1600&q=80')`,
+                backgroundImage: `url('${heroImage}')`,
               }}
             >
               <div className="w-full h-full flex items-center justify-center bg-background/40 backdrop-blur-[2px]">
                 <div className="text-center">
                   <Users className="w-16 h-16 mx-auto mb-4 text-primary/70" />
-                  <p className="text-lg font-display text-foreground/80">Team Photo</p>
+                  {/*<p className="text-lg font-display text-foreground/80">Team Photo</p>
                   <p className="text-sm text-muted-foreground">Add your group photo here</p>
                 </div>
               </div>
             </div>
           </div>
-          {/* Decorative corners */}
+          
+          {/* Decorative corners
           <div className="absolute -top-2 -left-2 w-12 h-12 border-t-2 border-l-2 border-primary/50 rounded-tl-lg" />
           <div className="absolute -bottom-2 -right-2 w-12 h-12 border-b-2 border-r-2 border-primary/50 rounded-br-lg" />
         </div>
+        */}
 
         {/* Team Values Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

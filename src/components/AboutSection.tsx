@@ -13,6 +13,7 @@ const AboutSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Photo Placeholder */}
+          {/* 
           <div className="relative group">
             <div className="aspect-[4/5] bg-card rounded-lg overflow-hidden shadow-elegant border border-border/50">
               <div className="w-full h-full flex flex-col items-center justify-center text-muted-foreground">
@@ -21,9 +22,10 @@ const AboutSection = () => {
                 <p className="text-sm text-muted-foreground/70 mt-2">Add your personal photo</p>
               </div>
             </div>
-            {/* Decorative Frame */}
+            {/* Decorative Frame 
             <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-primary/30 rounded-lg -z-10" />
           </div>
+          */}
 
           {/* Bio Content */}
           <div className="space-y-6">
