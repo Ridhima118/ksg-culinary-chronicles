@@ -11,7 +11,7 @@ const AboutSection = () => {
           <div className="w-16 h-0.5 bg-gradient-copper mx-auto" />
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid gap-12 items-center">
           {/* Photo Placeholder */}
           {/* 
           <div className="relative group">
@@ -22,15 +22,14 @@ const AboutSection = () => {
                 <p className="text-sm text-muted-foreground/70 mt-2">Add your personal photo</p>
               </div>
             </div>
-            {/* Decorative Frame 
+            {/* Decorative Frame
             <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-primary/30 rounded-lg -z-10" />
           </div>
-          */}
-
+*/}
           {/* Bio Content */}
-          <div className="space-y-6">
+          <div className="max-w-4xl mx-auto space-y-6">
             <div className="space-y-4">
-              <h3 className="font-display text-2xl text-primary">My Culinary Story</h3>
+              <h3 className="font-display text-3xl text-primary">My Culinary Story</h3>
               <p className="text-muted-foreground leading-relaxed">
                 Welcome to my culinary portfolio! I embarked on this incredible journey through the 
                 KSG Chef Course with a passion for creating delicious food and a desire to master 
@@ -53,7 +52,7 @@ const AboutSection = () => {
             <div className="grid grid-cols-3 gap-4 pt-6 border-t border-border/50">
               <div className="text-center">
                 <span className="text-3xl font-display text-primary">6</span>
-                <p className="text-sm text-muted-foreground mt-1">Recipes Mastered</p>
+                <p className="text-sm text-muted-foreground mt-1">Concepts Mastered</p>
               </div>
               <div className="text-center">
                 <span className="text-3xl font-display text-primary">4</span>

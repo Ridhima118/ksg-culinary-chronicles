@@ -43,15 +43,16 @@ const FooterSection = () => {
             <div className="space-y-3">
               <a href="mailto:your.email@example.com" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors text-sm">
                 <Mail className="w-4 h-4" />
-                your.email@example.com
+                chhabraridhima118@gmail.com
               </a>
-              <div className="flex items-center gap-3 text-muted-foreground text-sm">
+              {/*<div className="flex items-center gap-3 text-muted-foreground text-sm">
                 <Phone className="w-4 h-4" />
                 +1 234 567 890
               </div>
+              */}
               <div className="flex items-center gap-3 text-muted-foreground text-sm">
                 <MapPin className="w-4 h-4" />
-                Your Location
+                Dublin, Ireland
               </div>
             </div>
           </div>
@@ -63,7 +64,7 @@ const FooterSection = () => {
             © {currentYear} KSG Chef Course Portfolio. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground">
-            Course Completed: 2024
+            Course Completed: 2025
           </p>
         </div>
       </div>

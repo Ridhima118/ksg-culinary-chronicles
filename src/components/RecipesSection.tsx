@@ -1,7 +1,12 @@
 import { useState } from "react";
 import { Clock, Users, ChefHat, X } from "lucide-react";
 import seabass from "@/assets/seabass.jpg";
-import schnitzel from "@/assets/schnitzel.jpg"
+import schnitzel from "@/assets/schnitzel.jpg";
+import noodle from "@/assets/noodle.jpg";
+import potato from "@/assets/potato.jpg";
+import pollo from "@/assets/pollo.jpg";
+import brownie from "@/assets/brownie.jpg";
+import tomato_risotto from "@/assets/tomato_risotto.jpg";
 interface Recipe {
   id: number;
   name: string;
@@ -76,36 +81,35 @@ const recipes: Recipe[] = [
     id: 3,
     name: "Stir Fry Egg Noodles",
     description: "Quick and flavorful wok-tossed egg noodles with fresh vegetables and savory Asian sauce.",
-    image: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&q=80",
+    image: noodle,
     prepTime: "20 mins",
     servings: "2",
     //difficulty: "Beginner",
     category: "Main Course",
     ingredients: [
-      "300g fresh egg noodles",
-      "Mixed vegetables (pak choi, peppers, spring onions)",
-      "Soy sauce",
-      "Oyster sauce",
+      "80 g Water",
+      "200g fresh egg noodles",
+      "Mixed vegetables (pak choi, peppers, red onion)",
       "Sesame oil",
+      "Rapeseed oil",
       "Garlic and ginger",
-      "Vegetable oil",
+      "Sweet chilli sauce",
       "Sesame seeds for garnish"
     ],
     method: [
-      "Cook noodles briefly, drain and toss with sesame oil.",
-      "Heat wok until smoking, add oil.",
-      "Stir fry garlic and ginger until fragrant.",
-      "Add vegetables in order of cooking time needed.",
-      "Add noodles, toss vigorously.",
-      "Season with soy sauce and oyster sauce.",
-      "Garnish with spring onions and sesame seeds."
+    "Soak the egg noodles in boiling water until soft, then drain and chill.",
+    "Heat the rapeseed oil in a wok, add the garlic and grated ginger, and fry until fragrant.",
+    "Add the red onion and mixed peppers, toss until softened, then add the pak choi and cook for about 30 seconds until wilted; set aside.",
+    "Mix sesame oil, sweet chilli sauce, and sesame seeds in a bowl.",
+    "Add the stir-fried vegetables and softened noodles to the bowl and toss until evenly coated.",
+    "Serve and garnish with a sprinkle of sesame seeds if desired."
     ]
   },
   {
     id: 4,
     name: "Panfried Potatoes",
     description: "Perfectly crispy on the outside, fluffy on the inside - the ultimate side dish for any protein.",
-    image: "https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=800&q=80",
+    image: potato,
     prepTime: "35 mins",
     servings: "4",
     //difficulty: "Beginner",
@@ -131,9 +135,9 @@ const recipes: Recipe[] = [
   },
   {
     id: 5,
-    name: "Grilled Pollo Asado",
+    name: "Pollo Asado",
     description: "Marinated and grilled chicken with Mediterranean spices, served with a refreshing yogurt dressing.",
-    image: "https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=800&q=80",
+    image: pollo,
     prepTime: "45 mins",
     servings: "4",
     //difficulty: "Intermediate",
@@ -162,7 +166,7 @@ const recipes: Recipe[] = [
     id: 6,
     name: "Chocolate Hazelnut Brownie",
     description: "Rich, fudgy brownies with a crunchy hazelnut topping - the perfect indulgent finale to any meal.",
-    image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=800&q=80",
+    image: brownie,
     prepTime: "50 mins",
     servings: "12",
     //difficulty: "Beginner",
@@ -186,6 +190,40 @@ const recipes: Recipe[] = [
       "Pour into tin, scatter hazelnuts on top.",
       "Bake for 25-30 mins until set with a slight wobble."
     ]
+  },
+    {
+    id: 7,
+    name: "Tomato Risotto",
+    description: "Marinated and grilled chicken with Mediterranean spices, served with a refreshing yogurt dressing.",
+    image: tomato_risotto,
+    prepTime: "45 mins",
+    servings: "4",
+    //difficulty: "Intermediate",
+    category: "Main Course",
+    ingredients: [
+    "150g Arborio rice",
+    "40g finely diced onion or shallot",
+    "2 garlic cloves, minced",
+    "60ml white wine",
+    "700–800ml spicy tomato stock",
+    "1.5 tbsp olive oil or butter",
+    "30–40g grated parmesan",
+    "1–2 tsp basil oil",
+    "6–8 cherry tomatoes (roasted)",
+    "Fresh basil leaves",
+    "Optional: 40–50g smoked bacon lardons"
+    ],
+    method: [
+    "Sweat the onion/shallot and garlic in olive oil or butter (add bacon lardons if using).",
+    "Add the Arborio rice and stir to coat the grains.",
+    "Pour in the white wine and let it evaporate.",
+    "Add stock to cover the rice and let it absorb, stirring gently.",
+    "Continue adding stock in small amounts until the rice is about 3/4 cooked.",
+    "Cool and chill if prepping ahead, or continue directly to finishing.",
+    "Reheat with one ladle of stock and stir until fully cooked and creamy.",
+    "Fold in basil oil and grated parmesan.",
+    "Serve and garnish with roasted cherry tomatoes and basil leaves."
+    ] 
   }
 ];
 
